@@ -1,0 +1,42 @@
+.player {
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    border: 1px solid rgb(234, 228, 228);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: linear-gradient(70deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    font-size: 24px;
+    box-shadow: 1px 1px 30px rgb(255, 255, 255);
+}
+
+.player:hover {
+    cursor: pointer;
+}
+
+.player.active {
+    background: linear-gradient(70deg, rgb(183, 222, 177), rgb(46, 175, 121));
+    box-shadow: 1px 1px 10px rgb(39, 150, 67);
+}
+
+@media (max-width: 1600px) {
+    .player {
+      width: 50px;
+      height: 50px;
+    }
+  
+  }
+  @media (max-width: 780px) {
+    .player {
+      width: 30px;
+      height: 30px;
+    }
+  
+  }
+  

@@ -1,0 +1,157 @@
+.btn-cube button {
+    font-size: 32px;
+    border: none;
+    border-radius: 10px;
+    padding: 35px 45px;
+    background: #b9b7ff;
+    color: white;
+    z-index: 1000;
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
+    position: relative;
+}
+
+.btn-cube button:active {
+    background: linear-gradient(70deg, rgb(183, 222, 177), rgb(46, 175, 121));
+    box-shadow: 1px 1px 10px rgb(39, 150, 67);
+}
+
+.cube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+    width: 800px;
+    border: rgb(74, 51, 169) solid 1px;
+    margin: 0 10%;
+    border-radius: 10%;
+    background: black;
+    box-shadow: 0px 0px 10px rgba(213, 203, 255, 0.407);
+    background-image: url("./../../images/cube-backgr.jpg");
+    background-size: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin: 0;
+    position: relative;
+    color: #ffffff97;
+    font-size: 10em;
+    align-self: center;
+    font-family: 'Lovers Quarrel', cursive;
+}
+
+.cube_img {
+    opacity: 0;
+    margin: 30px;
+    border-radius: 15px;
+    background: #b9b7ff;
+    box-shadow: 1px 1px 20px rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    transition:
+        width 1s,
+        height 1s,
+        rotate 0.7s,
+        opacity 0s
+}
+
+.cube_img.active {
+    opacity: 1;
+    rotate: 1440deg;
+}
+
+@media (max-width: 2400px) {
+    .logo {
+        font-size: 7em;
+    }
+
+    .cube_img {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .btn-cube button {
+        font-size: 24px;
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 2160px) {
+
+    .cube_img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cube {
+        height: 250px;
+        width: 600px;
+        flex-direction: row;
+    }
+    .btn-cube button {
+        font-size: 24px;
+        padding: 25px 30px;
+    }
+
+    .logo {
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 1850px) {
+    .cube {
+        height: 250px;
+        width: 600px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1600px) {
+    .logo {
+        font-size: 6em;
+    }
+
+    .cube {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cube {
+        height: 200px;
+        width: 400px;
+    }
+
+    .logo {
+        font-size: 4em;
+    }
+
+    .btn-cube button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .cube_img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 780px) {
+    .cube {
+        height: 100px;
+    }
+
+    .cube_img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .btn-cube button {
+        padding: 5px 15px;
+    }
+
+
+}

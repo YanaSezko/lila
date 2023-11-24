@@ -1,0 +1,13 @@
+.field {
+    box-shadow: 1px 1px 70px rgba(255, 255, 255, 0.755);
+    width: auto;
+    height: 100vh;
+    margin: 30px;
+   
+  }
+  @media (max-width: 1600px) {
+    .field{
+      width: 80vw;
+      height: 100%;
+    }
+  }
