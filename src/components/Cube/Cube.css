@@ -141,16 +141,24 @@
 
 @media (max-width: 780px) {
     .cube {
-        height: 100px;
+        margin-top: 100px;
+        height: 120px;
+        width: 250px;
+        border-radius: 0;
+        padding: 10px;
     }
 
     .cube_img {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
     }
 
     .btn-cube button {
-        padding: 5px 15px;
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    .logo{
+        font-size: 24px;
     }
 
 

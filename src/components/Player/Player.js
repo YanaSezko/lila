@@ -18,8 +18,8 @@ function Player(props) {
                 event.stopPropagation()
             })
             if (player[i].classList.contains('active')) {
-                player[i].style.left = e.clientX - player[i].clientWidth / 2 + 'px'; //c учетом границ вычитаем - elem.offsettWidth/elem.offsettHeight
-                player[i].style.top = e.clientY - player[i].clientHeight / 2 + 'px'
+                player[i].style.left = e.pageX - player[i].clientWidth / 2 + 'px'; //c учетом границ вычитаем - elem.offsettWidth/elem.offsettHeight
+                player[i].style.top = e.pageY - player[i].clientHeight / 2 + 'px'
                 player[i].classList.remove('active')
             }
         }

@@ -8,6 +8,7 @@ import img5 from './../../images/cube5.png';
 import img6 from './../../images/cube6.png';
 
 
+
 function Cube() {
     const addRandomNumber = () => {
         function startAnimation() {

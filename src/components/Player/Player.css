@@ -1,6 +1,5 @@
 .player {
     position: absolute;
-    margin: 10px;
     top: 0;
     left: 0;
     width: 65px;
@@ -36,6 +35,14 @@
     .player {
       width: 30px;
       height: 30px;
+    }
+  
+  }
+  @media (max-width: 780px) {
+    .player {
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
     }
   
   }
