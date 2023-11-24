@@ -40,8 +40,8 @@
   }
   @media (max-width: 780px) {
     .player {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       font-size: 14px;
     }
   
