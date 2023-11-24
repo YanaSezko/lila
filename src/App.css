@@ -3,23 +3,57 @@
   margin: 0;
 }
 body {
-  
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  width: 100%;
   background: repeat url("./images/texture.jpg");
-  min-height: 100vh;
-  min-width: 100vw;
 }
-
 .wrapper{
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.cop{
+  margin-top: 1em;
+  color: azure;
+  opacity: 0.3;
+  text-align: center;
+  font-size: 2em;
+}
+a{
+  display: block;
+  background-color:  rgba(39, 150, 67, 0.324);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  font-size: 4em;
+  cursor: pointer;
+  color: azure;
+  margin: 0 0 0 5%;
+  text-decoration: none;
+}
 
-@media (max-width: 2160px) {
+
+@media (max-width: 1800px) {
   .wrapper {
     flex-direction: column-reverse;   
   }
 }
+
+@media (max-width: 1000px) {
+  a{
+    font-size: 2em;
+  }
+  .cop{
+    font-size: 1.5em;
+ }
+}
+@media (max-width: 700px) {
+  a{
+    font-size: 2em;
+    width: 300px;
+  }
+  .cop{
+    font-size: 1.5em;
+ }
+}
+

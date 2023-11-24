@@ -10,7 +10,10 @@ function App() {
       <div className='wrapper'>
         <Field />
         <Cube />
+
       </div>
+      <a href='https://instagram.com/gra_lila_ua?igshid=MTk0NTkyODZkYg=='>Описание&nbsp;клеток</a>
+      <p className='cop'>All rights reserved © Created by Sezko Yana</p>
     </div>
   );
 }
